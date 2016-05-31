@@ -5,7 +5,7 @@ The steps to run the Zeppelin notebook are as follows:
 1. Start the *Docker Quick Start Terminal*.
 2. In the *Docker Quick Start Terminal* use `cd` to change to `<working-directory>/datenanalyse-mit-spark/docker-image`
 (here `<working-directory>` is the directory containing the clone of this repository).
-3. Run `docker build -t codecentric/zeppelin .` (this will take some time) 
+3. Run `docker build -t codecentric/zeppelin .` **Note:** This will take some time as the data are downloaded.
 and then `docker run --net=host -p 8080:8080 -it codecentric/zeppelin`. The `--net` flag
 is used to allow internet access via the host. This is used in the notebook to download
 the Databrick CSV parsing dependency.
