@@ -10,7 +10,7 @@ Next run `docker run --net=host -p 8080:8080 -it codecentric/zeppelin`. The `--n
 is used to allow internet access via the host. This is used in the notebook to download
 the Databrick CSV parsing dependency.
 4. Open [Link](http://192.168.99.100:8080/#/) in your browser to open the Zeppelin UI.
-5. In the Zeppelin UI use **Import Notebook** to upload the notebook from `<working-directory>/million-songs/docker-image/notebooks`.
+5. In the Zeppelin UI use **Import Notebook** to upload the notebook from `<working-directory>/datenanalyse-mit-spark/docker-image/notebooks`.
 
 To stop the container open a second Quick Start Terminal (the one open already contains logs from Zeppelin) and use `docker ps` to obtain the container id
 and then `docker stop <the container id>` to stop the container. Before this you might want to commit changes to the container, e.g. the uploaded
